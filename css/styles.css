@@ -1,0 +1,179 @@
+body{
+  height: 2000px;
+}
+
+header{
+  position: fixed; 
+  width: 100%;
+  height: 100px;
+  top: 0;
+  transition: 0.6s;
+  z-index: 10;
+}
+
+header.sticky{
+  background: #881744;
+}
+
+header a img{
+  transition: 0.6s;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+
+.header_menu ul li{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.header_menu ul li a{
+  font-family: 'Fjalla One', sans-serif;
+  color: #FAFE9E;
+  font-size: 20px;
+  letter-spacing: .1em;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.header_menu ul li a:hover{
+  color: black;
+}
+
+.introducao{
+  background: url("../img/bg-header.jpg") no-repeat center;
+  width: 100%;
+  height: 560px;
+  background-size:cover;
+  text-align: center;
+}
+
+.titulo-interno{
+  margin-top:200px;
+  font-family:'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 35px;
+  letter-spacing: .1em;
+  color: #FAFE9E;
+}
+
+.titulo-interno:nth-child(2){
+  margin-top: 30px;
+}
+
+.quote p{
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FAFE9E;
+}
+
+.quote p::before, .quote p::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #FAFE9E;
+  margin:14px auto 10px auto;
+}
+
+.quote cite{
+  font-family:'Fjalla One', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #FAFE9E;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.adega-area{
+  background:#4e001f;
+  height:550px;
+  margin-top: 60px;
+}
+
+/* Adega slide */
+
+.adega-slide{
+  padding: 20px;
+}
+
+
+.titulo-inter{
+  font-family:'Fjalla One', sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #FAFE9E;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+}
+
+.titulo-inter::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #FAFE9E;
+  margin: 0 auto;
+  margin-top: 15px;
+
+}
+
+
+.prod-tittle{
+  font-family:'Fjalla One', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #FAFE9E;
+  text-transform: uppercase;
+}
+.prod-tittle::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FAFE9E;
+  margin-top:5px ;
+}
+
+.prod-details{
+  margin-top: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FAFE9E;
+}
+
+.vin-bottle{
+  display: block;
+  position: absolute;
+  right: 30px;
+ 
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  margin-bottom: -250px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #FAFE9E;
+}
