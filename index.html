@@ -3,9 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <title>VINBRAZIL - Home</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+
+    <header>
+      <div class="container">
+        <a href="index.html" class="grid-4">
+          <img src="img/Logo.svg" alt="VINBRAZIL logo">
+        </a>
+        <nav class="grid-12 header_menu">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="adega.html">Adega</a></li>
+            <li> <a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="introducao">
+      <div class="container">
+        <h1  class="titulo-interno">Vinhos de qualidade</h1>
+        <h1 class="titulo-interno">Desde 1875</h1>
+        <blockquote class="quote">
+          <p>O bom vinho é um camarada bondoso e de confiança, quando tomado com sabedoria.</p>
+          <cite>william shakespeare</cite>
+        </blockquote>
+      </div>
+    </section>
+    <section class="adega-area">
+      <section class="adega-slide">
+        <div class="container">
+          <h2 class="titulo-inter">Adega</h2>
+          <div class="grid-7" >
+            <h3 class="prod-tittle">Storia</h3>
+            <p class="prod-details">O verdadeiro segredo da felicidade está em ter um genuíno intresse por todos os 
+            detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>          
+          </div>
+          <img src="img/storia-bottle.png" alt="Garrafa de Vinho Storia" class=" vin-bottle grid-4"> 
+        </div>
+      </section>
+
+      <section class="adega-slide">
+        <div class="container">
+          <h2 class="titulo-inter">Adega</h2>
+          <div class="grid-7" >
+            <h3 class="prod-tittle">Identidade</h3>
+            <p class="prod-details">O verdadeiro segredo da felicidade está em ter um genuíno intresse por todos os 
+            detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>          
+          </div>
+          <img src="img/id-bottle.png"  alt="Garrafa de Vinho Storia" class=" vin-bottle grid-4"> 
+        </div>
+      </section>
+
+      <section class="adega-slide">
+        <div class="container">
+          <h2 class="titulo-inter">Adega</h2>
+          <div class="grid-7" >
+            <h3 class="prod-tittle">Villa-lobos</h3>
+            <p class="prod-details">O verdadeiro segredo da felicidade está em ter um genuíno intresse por todos os 
+            detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>          
+          </div>
+          <img src="img/red-bottle.png" alt="Garrafa de Vinho Storia" class=" vin-bottle grid-4"> 
+        </div>
+      </section>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("adega-slide");
+        var dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 6000); // Change image every 2 seconds
+      }
+    </script>
+    <script src="js/sticky_nav.js"></script>
+  
 </body>
 </html>
