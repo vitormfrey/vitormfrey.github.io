@@ -1,0 +1,77 @@
+header{
+  background: #881744;
+ }
+
+ .introducao{
+  background:url("../img/bg-adega.jpg") no-repeat center;
+  width: 100%;
+  background-size: cover;
+  height: 290px;
+}
+
+.titulo-interno::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #FAFE9E;
+  margin:20px auto 20px auto;
+}
+
+.contato{
+  margin:60px auto 60px auto;
+}
+
+
+.contato_form label{
+  font-family: 'Fjalla One', sans-serif;
+  display: block;
+  font-size: 18px;
+  letter-spacing: .1em;
+  margin: 10px auto 5px auto;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding-left:230px;
+  
+
+}
+
+.contato_form input, textarea{
+  display: block;
+  border: solid 5px #6A062E;
+  width: 500px;
+  background: none;
+  padding: 5px;
+  outline: none ;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: auto;
+  
+
+}
+
+.contato_form input:nth-of-type(3){
+  width: 150px;
+  margin-left: 230px;
+}
+
+.contato_form textarea{
+  width: 500px;
+  height: 120px;
+  margin-bottom: 40px; 
+}
+
+.contato_form button{
+  margin-left: 230px;
+  background: none;
+  border:5px solid #6A062E;
+  padding: 10px 30px;
+  font-family:'Fjalla One', sans-serif ;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.contato_form button:hover{
+  box-shadow: 1px 1px 15px black;
+}

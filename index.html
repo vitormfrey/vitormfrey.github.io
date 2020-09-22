@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
@@ -19,9 +20,9 @@
         </a>
         <nav class="grid-12 header_menu">
           <ul>
-            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="adega.html">Adega</a></li>
             <li> <a href="contato.html">Contato</a></li>
+            <li><button onclick="myFunction()" class="btn-change-theme"><img src="/img/moonDarkMode.svg" alt=""></button></li>
           </ul>
         </nav>
       </div>
@@ -82,9 +83,8 @@
     </section>
 
     <div class="container call">
-      <a href="contato.html" class="btn">Contato</a>
+      <a href="contato.html" class="btn-vin">Contato</a>
     </div>
-
 
     <footer>
       <div class="quebra container">
@@ -96,38 +96,37 @@
 
       <div class="footer">
         <div class="container">
+          <div class="grid-6">
+            <h3 class="prod-tittle"> Contato</h3>
+            <ul class="infos">
+              <li><p> - Rua das Uvas, Nº12, Campinas - SP</p></li>
+              <li><p> - 19 99999-3333</p></li>
+              <li><p> - contato@vinbrazil.com.br</p></li>
+            </ul>
+          </div>
 
+          <div class="social-media grid-4">
+            <h3 class="prod-tittle"> Redes Sociais</h3>
+            <ul>
+              <li><a href=""> <img src="img/facebook.svg" alt=""></a></li>
+              <li><a href=""> <img src="img/instagram-logo.svg" alt=""></a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
     </footer>
 
-    <div class="copy"></div>
+    <div class="copy">
+      <p>
+        VinBrazil 2020 - Direitos reservados
+      </p>
+    </div>
 
     
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("adega-slide");
-        var dots = document.getElementsByClassName("dot");
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 6000); // Change image every 2 seconds
-      }
-    </script>
     <script src="js/sticky_nav.js"></script>
-  
+    <script src="js/slides_animation.js"></script>
+    <script src="js/dark-mode.js"></script>
 </body>
-</html>
+ 
+</html>           
