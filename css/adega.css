@@ -1,3 +1,9 @@
+.black-card{
+  background-color: rgb(51, 28, 51) ;
+  color: #FAFE9E;
+  transition: 0.6s;
+}
+
 header{
  background: #881744;
 }
@@ -17,9 +23,6 @@ header{
   background: #FAFE9E;
   margin:20px auto 20px auto;
 }
-
-
-
 
 .card{
   margin-top: 60px;

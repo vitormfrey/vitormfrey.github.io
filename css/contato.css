@@ -1,3 +1,17 @@
+.contato-dark label{
+  color: #FAFE9E;
+}
+.contato-dark input{
+  color: #FAFE9E;
+}
+.contato-dark textarea{
+  color: #FAFE9E;
+}
+.contato-dark button{
+  color: #FAFE9E;
+}
+
+
 header{
   background: #881744;
  }
