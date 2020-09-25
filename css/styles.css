@@ -169,6 +169,7 @@ header.sticky{
   letter-spacing: .1em;
   color: #FAFE9E;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .prod-tittle::after{
   content: "";
@@ -180,7 +181,8 @@ header.sticky{
 }
 
 .prod-details{
-  margin-top: 40px;
+  margin-top: 10px;
+
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 20px;
@@ -197,11 +199,12 @@ header.sticky{
   height: 15px;
   width: 15px;
   margin: 0 5px;
-  margin-bottom: -250px;
+  margin-bottom: -180px;
   background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
 }
 
 .active {
